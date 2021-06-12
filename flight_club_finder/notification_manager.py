@@ -5,10 +5,10 @@ import smtplib
 class NotificationManager:
     # This class is responsible for sending notifications with the deal flight details.
     def __init__(self):
-        self.account_sid = "AC7bddcc90668267a0bd5682b627cd373c"
-        self.auth_token = "d33c75ea19d0b653ed0af81179553a78"
-        self.MY_EMAIL = "pythonpy09@gmail.com"
-        self.MY_PASSWORD = "abcd1234()"
+        self.account_sid = "Twillio SID HERE"
+        self.auth_token = "Twillio AUTH TOKEN"
+        self.MY_EMAIL = "SENDERS EMAIL ADDRESS"
+        self.MY_PASSWORD = "EMAIL PASSWORD HERE"
 
     def send_sms_notification(self, message):
         client = Client(self.account_sid, self.auth_token)
@@ -16,7 +16,7 @@ class NotificationManager:
         message_to_send = client.messages.create(
             body=message,
             from_='+12405585615',
-            to='+917015661467'
+            to='TWILLIO REGISTERED NUMBER'
         )
 
         print(message_to_send.status)
