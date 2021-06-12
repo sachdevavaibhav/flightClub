@@ -1,14 +1,13 @@
 import requests
 from flight_data import FlightData
 
-# API_KEY = "Ux8132fkc2wz_xWlS8lqPA1ynTP821QA"
-# TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com/locations/query"
+
 
 
 class FlightSearch:
     def __init__(self):
-        self.API_KEY = "Ux8132fkc2wz_xWlS8lqPA1ynTP821QA"
-        self.TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com"
+        self.API_KEY = "TEQUILLA API KEY HERE"
+        self.TEQUILA_ENDPOINT = "TEQUILLA END POINT HERE"
 
     # This class is responsible for talking to the Flight Search API.
     def get_destination_code(self, city):
