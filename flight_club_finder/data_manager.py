@@ -3,7 +3,7 @@ import requests
 
 class DataManager:
     def __init__(self):
-        self.SHEETY_ENDPOINT = "https://api.sheety.co/38daf0ccfd366d2271605456e298a1c1/flightDeals"
+        self.SHEETY_ENDPOINT = "SHEETY API HERE"
         self.destination_data = None
         self.email_list = []
 
